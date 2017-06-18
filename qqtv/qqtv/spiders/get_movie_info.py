@@ -7,12 +7,12 @@ from qqtv.items import QqtvItem
 class GetMovieInfoSpider(scrapy.Spider):
     name = 'get_movie_info'
     allowed_domains = ['v.qq.com']
-    start_urls = ['http://v.qq.com/']
+    start_urls = ['http://v.qq.com/x/list/movie?cate=10001&offset=0&sort=4&pay=-1']
 
     def parse(self, response):
         item = QqtvItem()
-        movie_list = response.xpath("//*[id='figures_list']")
-        print movie_list
+        movie_list = response.xpath("/html/body/div[3]/div/div/div[1]/div[2]/div/ul/li[1]").extract()
+        print(movie_list)
 '''
         def find_movie_data(page_html):
         def find_movie_name(page_html):

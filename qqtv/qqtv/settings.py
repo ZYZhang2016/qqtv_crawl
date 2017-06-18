@@ -14,7 +14,7 @@ BOT_NAME = 'qqtv'
 SPIDER_MODULES = ['qqtv.spiders']
 NEWSPIDER_MODULE = 'qqtv.spiders'
 
-ITEM_PIPELINES = ['qqtv.pipelines.qqtvspiderPipline']
+ITEM_PIPELINES = {'qqtv.pipelines.QqtvPipeline':300}
 
 USER_AGENT = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36'
 COOKIES_ENABLED = True

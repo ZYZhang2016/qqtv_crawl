@@ -5,7 +5,7 @@
 # Don't forget to add your pipeline to the ITEM_PIPELINES setting
 # See: http://doc.scrapy.org/en/latest/topics/item-pipeline.html
 
-from items import QqtvItem
+from qqtv.items import QqtvItem
 import pymongo
 from scrapy.conf import settings
 
