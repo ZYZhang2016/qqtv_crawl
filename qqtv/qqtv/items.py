@@ -14,8 +14,8 @@ class QqtvItem(scrapy.Item):
     name = scrapy.Field()
     content = scrapy.Field()
     ctime = scrapy.Field()
-    movit_url = scrapy.Field()
 
+    movie_url = scrapy.Field()
     movie_name = scrapy.Field()
     movie_actors = scrapy.Field()
     movie_score = scrapy.Field()
